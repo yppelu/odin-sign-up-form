@@ -1,10 +1,6 @@
-const inputs = document.querySelectorAll('input');
-const inputCorrectnessSymbolsIndicators = document.querySelectorAll('input+span');
-
-inputCorrectnessSymbolsIndicators.forEach(symbol => symbol.style.visibility = 'hidden');
-
-inputs.forEach((input, index) => {
-  input.addEventListener('focus', () => {
-    inputCorrectnessSymbolsIndicators[index].style.visibility = 'visible';
-  });
-});
+const fnameInput = document.getElementById('user_fname');
+const lnameInput = document.getElementById('user_lname');
+const emailInput = document.getElementById('user_email');
+const phnumberInput = document.getElementById('user_phnumber');
+const pwdInput = document.getElementById('user_pwd');
+const pwdConfirmInput = document.getElementById('user_pwd_confirm');

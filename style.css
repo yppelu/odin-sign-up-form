@@ -201,23 +201,15 @@ input:focus {
   height: calc(2em - 1px);
 }
 
-input:focus:valid {
+.valid-input {
   border-bottom: 2px solid var(--valid-color);
 }
 
-input:focus:invalid {
+.invalid-input {
   border-bottom: 2px solid var(--invalid-color);
 }
 
-input:valid+span::after {
-  content: " ✓";
-  color: var(--valid-color);
-  font-weight: bold;
-}
-
-input:invalid+span::after {
-  content: " ✗";
-  color: var(--invalid-color);
+input+span {
   font-weight: bold;
 }
 
