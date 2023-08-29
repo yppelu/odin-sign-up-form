@@ -56,7 +56,8 @@ h6 {
   --primary-color: #ebf4f4;
   --secondary-color: #FFFFFF;
   --accent-color: #03023b;
-  --warning-color: #e04100;
+  --valid-color: #00a573;
+  --invalid-color: #e04100;
 }
 
 * {
@@ -201,27 +202,27 @@ input:focus {
 }
 
 input:focus:valid {
-  border-bottom: 2px solid #00a573;
+  border-bottom: 2px solid var(--valid-color);
 }
 
 input:focus:invalid {
-  border-bottom: 2px solid var(--warning-color);
+  border-bottom: 2px solid var(--invalid-color);
 }
 
 input:valid+span::after {
   content: " ✓";
-  color: #00a573;
+  color: var(--valid-color);
   font-weight: bold;
 }
 
 input:invalid+span::after {
   content: " ✗";
-  color: var(--warning-color);
+  color: var(--invalid-color);
   font-weight: bold;
 }
 
 .input-warning-text {
-  color: var(--warning-color);
+  color: var(--invalid-color);
   font-size: 0.8rem;
 
   height: 2.5rem;
