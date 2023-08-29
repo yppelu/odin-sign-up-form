@@ -1,0 +1,53 @@
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font: inherit;
+  line-height: 1.5;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Main styles */
+
+@font-face {
+  font-family: Norse;
+  src: url(./fonts/Norse-Bold.otf) format("opentype");
+  font-weight: bold;
+}
