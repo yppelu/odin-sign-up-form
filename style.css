@@ -173,7 +173,7 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  column-gap: 2rem;
+  column-gap: 2.5rem;
 }
 
 label {
@@ -224,7 +224,7 @@ input:invalid+span::after {
   color: var(--warning-color);
   font-size: 0.8rem;
 
-  height: 2rem;
+  height: 2.5rem;
   width: 40ch;
 }
 
