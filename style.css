@@ -283,3 +283,13 @@ button:active {
     display: block;
   }
 }
+
+/* If OS color theme dark, then change colors */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #03023b;
+    --secondary-color: #190252;
+    --accent-color: #ebf4f4;
+  }
+}
