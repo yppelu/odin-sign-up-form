@@ -250,3 +250,36 @@ button:active {
 .redirect-to-login {
   padding-left: 2rem;
 }
+
+/* For mobile devices */
+
+.odin-logo-block-for-mobile {
+  background-color: var(--secondary-color);
+  display: none;
+  position: static;
+  margin-bottom: 2rem;
+}
+
+.background-image-for-mobile {
+  display: none;
+  position: static;
+  margin-top: -20%;
+}
+
+@media (max-width: 767px) {
+  .side-image {
+    display: none;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  .odin-logo-block-for-mobile {
+    display: flex;
+  }
+
+  .background-image-for-mobile {
+    display: block;
+  }
+}
