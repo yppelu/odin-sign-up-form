@@ -56,7 +56,6 @@ h6 {
   --primary-color: #ebf4f4;
   --secondary-color: #FFFFFF;
   --accent-color: #03023b;
-  --valid-color: #00a573;
   --invalid-color: #e04100;
 }
 
@@ -198,11 +197,6 @@ input {
 
 input:focus {
   background-color: var(--primary-color);
-}
-
-.valid-input {
-  border-bottom: 2px solid var(--valid-color);
-  height: calc(2em - 1px);
 }
 
 .invalid-input {

@@ -8,7 +8,6 @@ let isInputValid;
 const allInputs = document.querySelectorAll('input');
 allInputs.forEach(input => {
   input.addEventListener('input', () => {
-    input.classList.remove('valid-input');
     input.classList.add('invalid-input');
     isInputValid = false;
 
@@ -52,7 +51,6 @@ allInputs.forEach(input => {
     if (isInputValid === true) {
       input.nextSibling.nextSibling.textContent = "";
       input.classList.remove('invalid-input');
-      input.classList.add('valid-input');
       isInputValid = true;
     }
 
