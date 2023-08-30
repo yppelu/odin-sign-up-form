@@ -1,7 +1,7 @@
 const form = document.querySelector('form');
 
 const emailRegExp = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-const phnumberRegExp = /^\+\d \d{3} \d{3}-\d{4}$/;
+const phnumberRegExp = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
 
 let isInputValid;
 
@@ -24,7 +24,7 @@ allInputs.forEach(input => {
     }
     if (input.id === 'user_phnumber') {
       if (!phnumberRegExp.test(input.value)) {
-        input.nextSibling.nextSibling.textContent = "* number doesn't match pattern +x xxx xxx-xxxx";
+        input.nextSibling.nextSibling.textContent = "* invalid phone number";
       } else {
         isInputValid = true;
       }

@@ -174,7 +174,7 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  column-gap: 2.5rem;
+  column-gap: 2rem;
 }
 
 label {
@@ -214,7 +214,7 @@ input:focus {
   color: var(--invalid-color);
   font-size: 0.8rem;
 
-  height: 2.5rem;
+  height: 2rem;
   width: 40ch;
 }
 
