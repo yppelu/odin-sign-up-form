@@ -198,15 +198,16 @@ input {
 
 input:focus {
   background-color: var(--primary-color);
-  height: calc(2em - 1px);
 }
 
 .valid-input {
   border-bottom: 2px solid var(--valid-color);
+  height: calc(2em - 1px);
 }
 
 .invalid-input {
   border-bottom: 2px solid var(--invalid-color);
+  height: calc(2em - 1px);
 }
 
 input+span {
