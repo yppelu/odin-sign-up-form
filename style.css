@@ -210,10 +210,6 @@ input:focus {
   height: calc(2em - 1px);
 }
 
-input+span {
-  font-weight: bold;
-}
-
 .input-warning-text {
   color: var(--invalid-color);
   font-size: 0.8rem;
