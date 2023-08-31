@@ -201,7 +201,6 @@ input:focus {
 
 .invalid-input {
   border-bottom: 2px solid var(--invalid-color);
-  height: calc(2em - 1px);
 }
 
 .input-warning-text {
