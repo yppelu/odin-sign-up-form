@@ -1,6 +1,6 @@
 let isInputValid = true;
 
-/* User's name validation */
+/* User's first name validation */
 const fnameInput = document.getElementById('user_fname');
 const fnameWarningBlock = document.querySelector('.fname-warning');
 const validateFnameInput = () => validateRequiredInputs(fnameInput);
@@ -31,8 +31,7 @@ emailInput.addEventListener('input', () => {
 /* User's phone number validation */
 const phnumberInput = document.getElementById('user_phnumber');
 const phnumberWarningBlock = document.querySelector('.phnumber-warning');
-const phnumberRegExp =
-  /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
+const phnumberRegExp = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
 const validatePhnumberInput = () => {
   return (phnumberRegExp.test(phnumberInput.value) || !phnumberInput.value);
 }
