@@ -1,4 +1,4 @@
-let isRequiredValid = true;
+let isInputValid = true;
 
 /* User's name validation */
 const fnameInput = document.getElementById('user_fname');
@@ -92,20 +92,20 @@ form.addEventListener('submit', (e) => {
     setWarning(userPwdConfirmInput, userPwdConfirmWarningBlock, '* this field is required');
   }
 
-  if (!isRequiredValid) e.preventDefault();
+  if (!isInputValid) e.preventDefault();
 });
 
 /* Common functions */
 function setValidInput(input, warningBlock) {
   input.classList.remove('invalid-input');
   warningBlock.textContent = '';
-  isRequiredValid = true;
+  isInputValid = true;
 }
 
 function setWarning(input, warningBlock, warningText) {
   input.classList.add('invalid-input');
   warningBlock.textContent = warningText;
-  isRequiredValid = false;
+  isInputValid = false;
 }
 
 function validateRequiredInputs(input) {
