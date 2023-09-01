@@ -203,7 +203,7 @@ input:focus {
   border-bottom: 2px solid var(--invalid-color);
 }
 
-.input-warning-text {
+.input-warning {
   color: var(--invalid-color);
   font-size: 0.8rem;
 
